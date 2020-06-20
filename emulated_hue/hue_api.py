@@ -597,8 +597,6 @@ class HueApi:
                 retval["manufacturername"] = device["manufacturer"]
                 retval["modelid"] = device["model"]
                 retval["productname"] = device["name"]
-                if device["sw_version"]:
-                    retval["swversion"] = device["sw_version"]
 
         if (
             (entity_features & const.HASS_SUPPORT_BRIGHTNESS)
